@@ -1,7 +1,6 @@
 import math
 
 # Cléo Thor
-# U03487503
 # thor@bu.edu
 
 # Annie, Steve, and Can have to choose a place for lunch, but they can't agree on one
