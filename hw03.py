@@ -15,15 +15,16 @@
 # The probability of hitting the intersection area if a dart is thrown randomly within the 10x10 region.
 # Your answer should be expressed as float number within the interval [0.0,1.0]
 def answer(x1,y1,x2,y2,x3,y3,x4,y4):
+    # check if rectangles intersect
     if x1 > x4 or x3 > x2 or y1 > y4 or y3 > y2:
         return 0
 
-    p1 = max(x1, x3)
-    p2 = min(x2, x4)
-    q1 = max(y1, y3)
-    q2 = min(y2, y4)
+    p1 = max(x1, x3) #find left x coordinate
+    p2 = min(x2, x4) # find right x coordinate
+    q1 = max(y1, y3) # find bottom y coordinate
+    q2 = min(y2, y4) # find top y coordinate
 
-    area = (q2-q1)*(p2-p1)
+    area = (q2-q1)*(p2-p1) # calculate area
 
-    probability = area/100
+    probability = area/100 # put over total area
     return probability
