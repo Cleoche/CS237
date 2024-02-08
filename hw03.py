@@ -15,7 +15,7 @@
 # The probability of hitting the intersection area if a dart is thrown randomly within the 10x10 region.
 # Your answer should be expressed as float number within the interval [0.0,1.0]
 def answer(x1,y1,x2,y2,x3,y3,x4,y4):
-    if x1 >= x4 or x3 >= x2 or y1 >= y4 or y3 >= y2:
+    if x1 > x4 or x3 > x2 or y1 > y4 or y3 > y2:
         return 0
 
     p1 = max(x1, x3)
